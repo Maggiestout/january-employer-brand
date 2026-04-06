@@ -19,6 +19,8 @@
       --accent-modal-dim: rgba(34,197,94,0.12);
       --accent-profound: #e4e4ef;
       --accent-profound-dim: rgba(228,228,239,0.10);
+      --accent-owner: #f97316;
+      --accent-owner-dim: rgba(249,115,22,0.12);
       --accent-gold: #f59e0b;
       --gradient-modal: linear-gradient(135deg, #22c55e, #10b981);
       --gradient-profound: linear-gradient(135deg, #e4e4ef, #c0c0d0);
@@ -111,6 +113,7 @@
     .hero-company .dot { width: 10px; height: 10px; border-radius: 50%; }
     .hero-company .dot.modal { background: var(--accent-modal); box-shadow: 0 0 12px rgba(34,197,94,0.4); }
     .hero-company .dot.profound { background: var(--accent-profound); box-shadow: 0 0 12px rgba(124,58,237,0.4); }
+    .hero-company .dot.owner { background: var(--accent-owner); box-shadow: 0 0 12px rgba(249,115,22,0.4); }
 
     /* ── Section Headers ── */
     .section-header {
@@ -129,6 +132,7 @@
     }
     .section-header .label.modal { background: var(--accent-modal-dim); color: var(--accent-modal); }
     .section-header .label.profound { background: var(--accent-profound-dim); color: var(--accent-profound); }
+    .section-header .label.owner { background: var(--accent-owner-dim); color: var(--accent-owner); }
     .section-header h2 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 4vw, 3.2rem);
@@ -158,6 +162,7 @@
     }
     .stat-card .value.modal { color: var(--accent-modal); }
     .stat-card .value.profound { color: var(--accent-profound); }
+    .stat-card .value.owner { color: var(--accent-owner); }
     .stat-card .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
     /* ── Tactic Cards ── */
@@ -195,6 +200,7 @@
     }
     .tactic-card .card-tag.modal { background: var(--accent-modal-dim); color: var(--accent-modal); }
     .tactic-card .card-tag.profound { background: var(--accent-profound-dim); color: var(--accent-profound); }
+    .tactic-card .card-tag.owner { background: var(--accent-owner-dim); color: var(--accent-owner); }
     .tactic-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
     .tactic-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
     .tactic-card .card-link {
@@ -209,6 +215,7 @@
     }
     .tactic-card .card-link.modal { color: var(--accent-modal); }
     .tactic-card .card-link.profound { color: var(--accent-profound); }
+    .tactic-card .card-link.owner { color: var(--accent-owner); }
     .tactic-card .card-link:hover { gap: 0.7rem; }
 
     /* ── Screenshot Embed ── */
@@ -308,6 +315,7 @@
     }
     .why-card .icon.modal { background: var(--accent-modal-dim); }
     .why-card .icon.profound { background: var(--accent-profound-dim); }
+    .why-card .icon.owner { background: var(--accent-owner-dim); }
     .why-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
     .why-card p { color: var(--text-muted); font-size: 0.88rem; }
 
@@ -478,6 +486,7 @@
     }
     .quote-block.modal { border-color: var(--accent-modal); }
     .quote-block.profound { border-color: var(--accent-profound); }
+    .quote-block.owner { border-color: var(--accent-owner); }
 
     /* ── Comparison table ── */
     .comparison-row {
@@ -496,6 +505,7 @@
     }
     .comparison-col h3.modal { border-color: var(--accent-modal); }
     .comparison-col h3.profound { border-color: var(--accent-profound); }
+    .comparison-col h3.owner { border-color: var(--accent-owner); }
     .comparison-col ul { list-style: none; }
     .comparison-col ul li {
       padding: 0.6rem 0;
@@ -516,6 +526,7 @@
     }
     .comparison-col.modal ul li::before { background: var(--accent-modal); }
     .comparison-col.profound ul li::before { background: var(--accent-profound); }
+    .comparison-col.owner ul li::before { background: var(--accent-owner); }
 
     /* ── Tactic Definitions ── */
     .tactic-defs {
@@ -556,6 +567,7 @@
     }
     .tactic-def .td-label .td-num.modal { background: var(--accent-modal-dim); color: var(--accent-modal); }
     .tactic-def .td-label .td-num.profound { background: var(--accent-profound-dim); color: var(--accent-profound); }
+    .tactic-def .td-label .td-num.owner { background: var(--accent-owner-dim); color: var(--accent-owner); }
     .tactic-def .td-label h4 { font-size: 0.88rem; font-weight: 700; line-height: 1.3; }
     .tactic-def .td-desc {
       padding: 1.5rem;
@@ -660,6 +672,10 @@
         <span class="dot profound"></span>
         <span><strong>Profound</strong> &mdash; $1B Valuation</span>
       </div>
+      <div class="hero-company">
+        <span class="dot owner"></span>
+        <span><strong>Owner.com</strong> &mdash; $1B Valuation</span>
+      </div>
     </div>
   </div>
 </section>
@@ -762,6 +778,13 @@
         <div>
           <h4>The Whole Team Becomes the Brand</h4>
           <p>Not just the CEO. When engineers, PMs, and founders are publicly visible &mdash; posting, speaking, attending &mdash; candidates see who they'd work with before they even apply.</p>
+        </div>
+      </div>
+      <div class="takeaway-item">
+        <div class="num">9</div>
+        <div>
+          <h4>Make Customer Empathy Public</h4>
+          <p>The strongest employer brands don't just market software &mdash; they make candidates feel the human importance of the work. Customer stories with real people, real stakes, and real outcomes become the most compelling recruiting asset.</p>
         </div>
       </div>
     </div>
@@ -1164,6 +1187,210 @@
       <div class="icon profound">&#127775;</div>
       <h4>Domain Authority via Events</h4>
       <p>Hosting 300 people from Fortune 100 companies signals that serious organizations trust their thinking &mdash; not just marketing fluff.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════ OWNER.COM ═══════════════ -->
+<section>
+  <div class="section-header">
+    <span class="label owner">Case Study 03</span>
+    <h2>Owner.com</h2>
+    <p>Owner turns customer empathy into a recruiting asset. Instead of presenting as generic vertical SaaS, Owner makes the stakes deeply human: local restaurant owners are the heroes, big chains are the alternative, and the product exists to help independents survive and thrive.</p>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="value owner">$1B</div>
+      <div class="label">Valuation</div>
+    </div>
+    <div class="stat-card">
+      <div class="value owner">$120M</div>
+      <div class="label">Series C</div>
+    </div>
+    <div class="stat-card">
+      <div class="value owner">10,000+</div>
+      <div class="label">Restaurants</div>
+    </div>
+    <div class="stat-card">
+      <div class="value owner">100→200</div>
+      <div class="label">Team in 2024</div>
+    </div>
+    <div class="stat-card">
+      <div class="value owner">2020</div>
+      <div class="label">Founded</div>
+    </div>
+  </div>
+
+  <!-- Owner Homepage Screenshot -->
+  <h3 style="text-align:center;font-size:1.1rem;margin:2rem 0 1rem;color:var(--text-muted);">&#127760; Visit Their Homepage</h3>
+  <div class="screenshot-embed" style="margin-bottom:2rem;">
+    <a href="https://www.owner.com" target="_blank" style="text-decoration:none;color:inherit;display:block;">
+      <div class="browser-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="url-bar">&#128279; owner.com</div>
+      </div>
+      <div style="position:relative;background:linear-gradient(135deg,#1a0f05,#2a1508);min-height:200px;display:flex;align-items:center;justify-content:center;padding:3rem 2rem;">
+        <div style="text-align:center;">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--accent-owner);margin-bottom:0.5rem;">The restaurant platform that helps independents thrive</div>
+          <div style="font-size:0.9rem;color:var(--text-muted);max-width:500px;margin:0 auto 1rem;">Online ordering, marketing, and AI-powered growth tools for 10,000+ restaurants.</div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:center;margin-top:0.75rem;">
+            <span style="padding:0.2rem 0.6rem;border-radius:6px;font-size:0.7rem;font-weight:600;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);color:var(--accent-owner);">Online Ordering</span>
+            <span style="padding:0.2rem 0.6rem;border-radius:6px;font-size:0.7rem;font-weight:600;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);color:var(--accent-owner);">AI Marketing</span>
+            <span style="padding:0.2rem 0.6rem;border-radius:6px;font-size:0.7rem;font-weight:600;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);color:var(--accent-owner);">Website Builder</span>
+            <span style="padding:0.2rem 0.6rem;border-radius:6px;font-size:0.7rem;font-weight:600;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.2);color:var(--accent-owner);">Growth Tools</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Mission-Led Founder Narrative -->
+  <div class="feature-wide">
+    <div class="fw-inner">
+      <div class="fw-content">
+        <span class="label owner" style="margin-bottom:1rem">Tactic: Mission-Led Founder Narrative</span>
+        <h3 style="font-size:1.5rem;margin-bottom:1rem;">CEO Adam Guild: Helping Local Businesses Survive &amp; Thrive</h3>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">Adam Guild's founder story &mdash; including helping save his mom's small business &mdash; gives Owner a real emotional center. The company consistently frames local business owners as heroes and positions itself as helping them compete against larger chains. This makes the mission feel personal rather than abstract.</p>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="https://www.owner.com/our-story" target="_blank" style="text-decoration:none;padding:0.4rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;">Our Story &rarr;</a>
+          <a href="https://fortune.com/2024/05/02/why-owner-cofounder-and-ceo-adam-guild-is-serving-up-software-especially-for-mom-and-pop-restaurants/" target="_blank" style="text-decoration:none;padding:0.4rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;">Fortune Profile &rarr;</a>
+          <a href="https://www.owner.com/c" target="_blank" style="text-decoration:none;padding:0.4rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;">Series C Memo &rarr;</a>
+        </div>
+      </div>
+      <div class="fw-visual" style="background:linear-gradient(135deg,#1a0f05,#2a1508);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:2rem;">
+        <div style="font-size:3.5rem;margin-bottom:1rem;">&#127869;</div>
+        <div style="font-size:1.1rem;font-weight:700;color:var(--accent-owner);margin-bottom:0.3rem;">10,000+ Restaurants</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);text-align:center;">Helping independents compete<br>against the big chains</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer Impact Storytelling -->
+  <h3 style="text-align:center;font-size:1.2rem;margin:2rem 0 0.75rem;">Customer Stories as Recruiting Proof</h3>
+  <p style="text-align:center;color:var(--text-muted);font-size:0.92rem;max-width:700px;margin:0 auto 1.5rem;">Owner doesn't treat case studies like static B2B proof &mdash; it turns restaurant owners into protagonists. The Mattenga's Pizzeria story and the Karv Greek Kouzina video show real people, real stress, and real outcomes. This is what makes it powerful: <strong>candidates feel that joining the company means helping someone tangible, not just improving a dashboard metric.</strong></p>
+  <div class="screenshot-embed">
+    <div class="browser-bar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="url-bar">owner.com/case-studies</div>
+    </div>
+    <div class="embed-content" style="background:linear-gradient(135deg,#1a0f05,#2a1508);padding:2.5rem;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
+        <a href="https://www.owner.com/case-studies/mattengas-pizzeria" target="_blank" style="text-decoration:none;color:inherit;padding:1.25rem;border-radius:12px;background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);transition:all 0.2s;">
+          <div style="font-size:0.68rem;color:var(--accent-owner);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Customer Story</div>
+          <div style="font-size:0.9rem;font-weight:600;margin-bottom:0.3rem;">Mattenga's Pizzeria</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Polished customer storytelling that makes impact tangible</div>
+          <div style="font-size:0.72rem;color:var(--accent-owner);margin-top:0.4rem;">Read case study &rarr;</div>
+        </a>
+        <a href="https://www.owner.com/case-studies/karv-greek-kouzina" target="_blank" style="text-decoration:none;color:inherit;padding:1.25rem;border-radius:12px;background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);transition:all 0.2s;">
+          <div style="font-size:0.68rem;color:var(--accent-owner);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Video Story</div>
+          <div style="font-size:0.9rem;font-weight:600;margin-bottom:0.3rem;">Karv Greek Kouzina</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Restaurant owner explains competing with chains</div>
+          <div style="font-size:0.72rem;color:var(--accent-owner);margin-top:0.4rem;">Watch video &rarr;</div>
+        </a>
+        <a href="https://www.owner.com/case-studies" target="_blank" style="text-decoration:none;color:inherit;padding:1.25rem;border-radius:12px;background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);transition:all 0.2s;">
+          <div style="font-size:0.68rem;color:var(--accent-owner);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">All Stories</div>
+          <div style="font-size:0.9rem;font-weight:600;margin-bottom:0.3rem;">Case Studies Hub</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Browse all customer success stories</div>
+          <div style="font-size:0.72rem;color:var(--accent-owner);margin-top:0.4rem;">Explore all &rarr;</div>
+        </a>
+        <a href="https://www.owner.com/blog/restaurant-growth-secrets-guides" target="_blank" style="text-decoration:none;color:inherit;padding:1.25rem;border-radius:12px;background:rgba(249,115,22,0.06);border:1px solid rgba(249,115,22,0.15);transition:all 0.2s;">
+          <div style="font-size:0.68rem;color:var(--accent-owner);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem;">Education</div>
+          <div style="font-size:0.9rem;font-weight:600;margin-bottom:0.3rem;">Restaurant Growth Guides</div>
+          <div style="font-size:0.78rem;color:var(--text-muted);">Playbooks that teach customers how to win</div>
+          <div style="font-size:0.72rem;color:var(--accent-owner);margin-top:0.4rem;">Read guides &rarr;</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Owner Tactics Defined -->
+  <h3 style="text-align:center;font-size:1.3rem;margin:3rem 0 1.5rem;">Owner's Top Tactics</h3>
+  <div class="tactic-defs">
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">1</span>
+        <h4>Mission-Led Founder Narrative</h4>
+      </div>
+      <div class="td-desc">A public story that makes the company's purpose feel personal. Adam Guild's founder story &mdash; saving his mom's small business &mdash; gives Owner real emotional center. <a href="https://www.owner.com/our-story" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Our Story &rarr;</a></div>
+    </div>
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">2</span>
+        <h4>Customer Impact Storytelling</h4>
+      </div>
+      <div class="td-desc">Customer stories told with emotional specificity, not just logos and metrics. Restaurant owners become protagonists with real stakes. <a href="https://www.owner.com/case-studies/mattengas-pizzeria" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Mattenga's Story &rarr;</a> <a href="https://www.owner.com/case-studies/karv-greek-kouzina" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Karv Video &rarr;</a></div>
+    </div>
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">3</span>
+        <h4>Educational Content + Operator Playbooks</h4>
+      </div>
+      <div class="td-desc">Teaching the customer how to win, not just why to buy. Guides, growth playbooks, website grader, and tactical blog posts build authority while showing deep customer understanding. <a href="https://www.owner.com/blog/restaurant-growth-secrets-guides" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Growth Guides &rarr;</a></div>
+    </div>
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">4</span>
+        <h4>Visible AI + Product Shipping</h4>
+      </div>
+      <div class="td-desc">AI packaged as practical leverage for customers, not vague innovation theater. AI SEO pages, smarter promotions, "AI Executives" &mdash; all explained in plain English tied to outcomes. <a href="https://www.owner.com/releases" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Product Releases &rarr;</a></div>
+    </div>
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">5</span>
+        <h4>Team-Led Recruiting Content</h4>
+      </div>
+      <div class="td-desc">Making the company legible through the people behind it &mdash; not just the founders. CRO videos, hiring posts, and "Life at Owner" give candidates a picture of who they'd work with. <a href="https://www.owner.com/careers" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Careers &rarr;</a> <a href="https://www.linkedin.com/feed/update/urn:li:activity:7435758574712115200/" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">CRO Post &rarr;</a></div>
+    </div>
+    <div class="tactic-def">
+      <div class="td-label">
+        <span class="td-num owner">6</span>
+        <h4>Credibility Moments as Brand Moments</h4>
+      </div>
+      <div class="td-desc">Using fundraising, awards, and market recognition as recruiting signals. The Series C memo, investor roster, Bloomberg coverage, and category leadership all fold back into the mission story. <a href="https://www.owner.com/c" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Series C Memo &rarr;</a> <a href="https://www.owner.com/press" target="_blank" style="color:var(--accent-owner);text-decoration:none;font-weight:600;">Press &rarr;</a></div>
+    </div>
+  </div>
+
+  <!-- Evidence Links -->
+  <div style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;margin-bottom:2rem;">
+    <a href="https://www.owner.com/c" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Series C Memo &rarr;</a>
+    <a href="https://www.owner.com/our-story" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Our Story &rarr;</a>
+    <a href="https://www.owner.com/careers" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Careers / Life at Owner &rarr;</a>
+    <a href="https://www.owner.com/releases" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Product Releases &rarr;</a>
+    <a href="https://www.owner.com/case-studies" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Case Studies &rarr;</a>
+    <a href="https://www.bloomberg.com/news/articles/2025-05-13/restaurant-tech-startup-owner-com-hits-1-billion-valuation" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Bloomberg Coverage &rarr;</a>
+    <a href="https://fortune.com/2024/05/02/why-owner-cofounder-and-ceo-adam-guild-is-serving-up-software-especially-for-mom-and-pop-restaurants/" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Fortune Profile &rarr;</a>
+    <a href="https://techcrunch.com/2024/01/31/owner-33m-series-b-online-restaurants/" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">TechCrunch &rarr;</a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7435758574712115200/" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">CRO: Why Join Owner &rarr;</a>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7437518860125327361/" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Karv Customer Video &rarr;</a>
+    <a href="https://www.owner.com/blog/restaurant-growth-secrets-guides" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Growth Guides &rarr;</a>
+    <a href="https://www.owner.com/press" target="_blank" style="text-decoration:none;padding:0.5rem 1rem;border-radius:8px;background:var(--accent-owner-dim);color:var(--accent-owner);font-size:0.8rem;font-weight:600;border:1px solid rgba(249,115,22,0.2);">Press &rarr;</a>
+  </div>
+
+  <!-- Why It Works for Owner -->
+  <h3 style="text-align:center;font-size:1.3rem;margin:3rem 0 1rem;">Why This Lands with Candidates</h3>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="icon owner">&#10084;</div>
+      <h4>Mission Feels Real, Not Abstract</h4>
+      <p>Owner doesn't just say it serves restaurant owners &mdash; it shows real people, real stress, and real outcomes. The human stakes of the work are visible.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon owner">&#128100;</div>
+      <h4>Customer Stories as Recruiting Proof</h4>
+      <p>Joining means helping someone tangible. Case studies turn restaurant owners into protagonists, making the company feel empathetic and worth joining.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon owner">&#9889;</div>
+      <h4>Empathy + Ambition in Balance</h4>
+      <p>Owner feels emotionally resonant without feeling soft. The company signals high standards, fast growth, $1B valuation, and serious execution alongside its mission.</p>
+    </div>
+    <div class="why-card">
+      <div class="icon owner">&#128101;</div>
+      <h4>The Team Is Visible</h4>
+      <p>Team-led videos, employee spotlights, and CRO posts help candidates picture the people, pace, and culture behind the brand before they apply.</p>
     </div>
   </div>
 </section>
